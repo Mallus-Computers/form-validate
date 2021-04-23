@@ -1,0 +1,852 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+section {
+    padding: 0 auto;
+}
+
+:root {
+    --primary-color: rgb(248, 122, 122);
+    --primary-font: "Poppins";
+}
+
+/* 
+
+- Desktop: 1440px
+
+
+*/
+body {
+    background-image: url(/images/bg-intro-mobile.png);
+    background-color: var(--primary-color);
+    padding: 0 auto;
+}
+
+section .banner {
+    margin-top: 10em;
+    align-items: center;
+    min-height: auto;
+}
+
+section .banner  h1 {
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400px;
+    font-size: 1.9em;
+    color: white;
+}
+
+section .banner  p {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    width: 100%;
+    margin: 30px auto;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    color: white;
+    font-weight: normal;
+}
+
+.trial {
+    position: relative;
+    background-color: rgb(56, 32, 87);
+    border-radius: 10px;
+    left: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.trial p {
+    color: white;
+}
+
+
+#form {
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    background-color: white;
+    height: auto;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.form-control {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+
+.form-control input {
+    font-family: "Poppins", sans-serif;
+    border: 2px solid black;
+    border-radius: 4px;
+    display: block;
+    font-family: "poppins";
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-control.success input {
+    border-color: green;
+}
+.form-control.error input {
+    border-color: red;
+}
+
+.form-control.success i.fas.fa-check-circle {
+    visibility: visible;
+    color: green;
+}
+
+.form-control.error i.fas.fa-exclamation-circle {
+    visibility: visible;
+    color: red;
+}
+
+.form-control.error small {
+    visibility: visible;
+    color: red;
+    font-style: italic;
+    position: relative;
+    left: 280px;
+}
+
+.form-control i {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    visibility: hidden;
+}
+
+.form-control small {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+#form button {
+    margin: 0 auto;
+    background-color: green;
+    border: 2px solid green;
+    border-radius: 4px;
+    color: white;
+    display: block;
+    font-family: "poppins", sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 85%;
+    text-transform: uppercase;
+}
+
+#form .ToS {
+    margin: 4px auto;
+    width: 80%;
+    text-align: center;
+}
+#form .ToS p {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    align-items: center;
+}
+
+
+/* For Desktop and large Screen Devices */
+
+@media screen and (max-width: 1440px) and (min-width: 1025px) {
+       
+    section {
+        padding: 0 auto;
+    }
+    
+    body {
+        background-image: url(/images/bg-intro-mobile.png);
+        background-color: var(--primary-color);
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+    
+    section .banner {
+        margin-top: 15em;
+        align-items: center;
+        min-height: auto;
+        width: 50%;
+        margin-left: 100px;
+    }
+    
+    section .banner  h1 {
+        width: 90%;
+        margin: 10px auto;
+        text-align: left;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600px;
+        font-size: 2.5em;
+        color: white;
+    }
+    
+    section .banner  p {
+        font-family: "Poppins", sans-serif;
+        text-align: left;
+        width: 100%;
+        margin: 30px auto;
+        font-size: .8em;
+        line-height: 1.8em;
+        color: white;
+        font-weight: normal;
+        margin-left: 20px;
+    }
+    .right-section {
+        position: relative;
+        right: 10em;
+        top: 5em;
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+        min-height: auto;
+        padding: 10px auto;
+        
+    }   
+    .trial {
+        margin-top: 10px;
+        padding: 20px;
+        margin-bottom:  30px;
+        position: relative;
+        width: 89%;
+        position: relative;
+        left: 25px;
+        background-color: rgb(56, 32, 87);
+        border-radius: 10px;
+        text-align: center;
+    }
+    
+    .trial p {
+        color: white;
+    }
+    
+    
+    #form {
+        justify-content: center;
+        width: 90%;
+        margin: 0 auto;
+        background-color: white;
+        height: auto;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 50px;
+        
+    }
+    
+    .form-control {
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        position: relative;
+    }
+    
+    
+    .form-control input {
+        font-family: "Poppins", sans-serif;
+        border: 2px solid black;
+        border-radius: 4px;
+        display: block;
+        font-family: "poppins";
+        font-size: 14px;
+        padding: 10px;
+        width: 100%;
+    }
+    
+    .form-control.success input {
+        border-color: green;
+    }
+    .form-control.error input {
+        border-color: red;
+    }
+    
+    .form-control.success i.fas.fa-check-circle {
+        visibility: visible;
+        color: green;
+    }
+    
+    .form-control.error i.fas.fa-exclamation-circle {
+        visibility: visible;
+        color: red;
+    }
+    
+    .form-control.error small {
+        visibility: visible;
+        color: red;
+        font-style: italic;
+        position: relative;
+        left: 220px;
+    }
+    
+    .form-control i {
+        position: absolute;
+        top: 15px;
+        right: 30px;
+        visibility: hidden;
+    }
+    
+    .form-control small {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        visibility: hidden;
+    }
+    
+    #form button {
+        margin: 0 auto;
+        background-color: green;
+        border: 2px solid green;
+        border-radius: 4px;
+        color: white;
+        display: block;
+        font-family: "poppins", sans-serif;
+        font-size: 16px;
+        padding: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+        text-transform: uppercase;
+    }
+    
+    #form .ToS {
+        margin: 4px auto;
+        width: 80%;
+        text-align: center;
+    }
+    #form .ToS p {
+        font-family: "Poppins", sans-serif;
+        font-size: 14px;
+        align-items: center;
+    }
+    
+}
+
+
+/* For Small Screens and Laptops */
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+       
+    section {
+        padding: 0 auto;
+    }
+    
+    body {
+        background-image: url(/images/bg-intro-mobile.png);
+        background-color: var(--primary-color);
+        padding: 0 auto;
+        display: flex;
+    }
+    
+    section .banner {
+        margin-top: 15em;
+        align-items: center;
+        min-height: auto;
+        width: 50%;
+        margin-left: 30px;
+    }
+    
+    section .banner  h1 {
+        width: 90%;
+        margin: 10px auto;
+        text-align: left;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600px;
+        font-size: 1.5em;
+        color: white;
+    }
+    
+    section .banner  p {
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        width: 100%;
+        margin: 30px auto;
+        font-size: .9em;
+        line-height: 1.8em;
+        color: white;
+        font-weight: normal;
+        margin-left: 10px;
+    }
+    .right-section {
+        position: relative;
+        right: 5em;
+        top: 5em;
+        width: 85%;
+        align-items: center;
+        justify-content: center;
+        min-height: auto;
+        padding: 5px auto;
+        
+    }   
+    .trial {
+        margin-top: 10px;
+        padding: 15px;
+        margin-bottom:  30px;
+        position: relative;
+        width: 100%;
+        position: relative;
+        left: 0px;
+        background-color: rgb(56, 32, 87);
+        border-radius: 10px;
+        text-align: center;
+    }
+    
+    .trial p {
+        color: white;
+    }
+    
+    
+    #form {
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        background-color: white;
+        height: auto;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 50px;
+        
+    }
+    
+    .form-control {
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        position: relative;
+    }
+    
+    
+    .form-control input {
+        font-family: "Poppins", sans-serif;
+        border: 2px solid black;
+        border-radius: 4px;
+        display: block;
+        font-family: "poppins";
+        font-size: 14px;
+        padding: 10px;
+        width: 100%;
+    }
+    
+    .form-control.success input {
+        border-color: green;
+    }
+    .form-control.error input {
+        border-color: red;
+    }
+    
+    .form-control.success i.fas.fa-check-circle {
+        visibility: visible;
+        color: green;
+    }
+    
+    .form-control.error i.fas.fa-exclamation-circle {
+        visibility: visible;
+        color: red;
+    }
+    
+    .form-control.error small {
+        visibility: visible;
+        color: red;
+        font-style: italic;
+        position: relative;
+        left: 110px;
+    }
+    
+    .form-control i {
+        position: absolute;
+        top: 15px;
+        right: 30px;
+        visibility: hidden;
+    }
+    
+    .form-control small {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        visibility: hidden;
+    }
+    
+    #form button {
+        margin: 0 auto;
+        background-color: green;
+        border: 2px solid green;
+        border-radius: 4px;
+        color: white;
+        display: block;
+        font-family: "poppins", sans-serif;
+        font-size: 16px;
+        padding: 5px;
+        margin-bottom: 10px;
+        width: 100%;
+        text-transform: uppercase;
+    }
+    
+    #form .ToS {
+        margin: 4px auto;
+        width: 80%;
+        text-align: center;
+    }
+    #form .ToS p {
+        font-family: "Poppins", sans-serif;
+        font-size: 10px;
+        align-items: center;
+    }
+    
+}
+
+
+/* For ipads and Tablets */
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+    section {
+        padding: 0 auto;
+    }
+    
+    body {
+        background-image: url(/images/bg-intro-mobile.png);
+        background-color: var(--primary-color);
+        padding: 0 auto;
+    }
+    
+    section .banner {
+        margin-top: 10em;
+        padding: 0 50px;
+        align-items: center;
+        min-height: auto;
+        width: 100%;
+    }
+    
+    section .banner  h1 {
+        width: 80%;
+        margin: 10px auto;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600px;
+        font-size: 2.3em;
+        color: white;
+    }
+    
+    section .banner  p {
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        width: 100%;
+        margin: 30px auto;
+        font-size: 1.5em;
+        line-height: 1.8em;
+        color: white;
+        font-weight: normal;
+    }
+    .right-section {
+        position: relative;
+        right: 5em;
+        top: 5em;
+        width: 85%;
+        align-items: center;
+        justify-content: center;
+        min-height: auto;
+        padding: 5px auto;
+        
+    }   
+    .trial {
+        margin-top: 10px;
+        padding: 15px;
+        margin-bottom:  30px;
+        position: relative;
+        left: 120px;
+        width: 100%;
+        position: relative;
+        background-color: rgb(56, 32, 87);
+        border-radius: 10px;
+        text-align: center;
+        
+    }
+    
+    .trial p {
+        color: white;
+        font-size: 1.5em;
+    }
+    
+    
+    #form {
+        justify-content: center;
+        position: relative;
+        left: 120px;
+        width: 100%;
+        background-color: white;
+        height: auto;
+        border-radius: 15px;
+        padding: 40px;
+        margin-bottom: 50px;
+        
+    }
+    
+    .form-control {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        position: relative;
+    }
+    
+    
+    .form-control input {
+        font-family: "Poppins", sans-serif;
+        border: 2px solid black;
+        border-radius: 4px;
+        display: block;
+        font-family: "poppins";
+        font-size: 14px;
+        padding: 30px;
+        width: 100%;
+    }
+    
+    .form-control.success input {
+        border-color: green;
+    }
+    .form-control.error input {
+        border-color: red;
+    }
+    
+    .form-control.success i.fas.fa-check-circle {
+        visibility: visible;
+        color: green;
+    }
+    
+    .form-control.error i.fas.fa-exclamation-circle {
+        visibility: visible;
+        color: red;
+    }
+    
+    .form-control.error small {
+        visibility: visible;
+        color: red;
+        font-style: italic;
+        position: relative;
+        left: 15px;
+        top: 10px;
+    }
+    
+    .form-control i {
+        position: absolute;
+        top: 15px;
+        right: 30px;
+        visibility: hidden;
+    }
+    
+    .form-control small {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        visibility: hidden;
+    }
+    
+    #form button {
+        margin: 0 auto;
+        background-color: green;
+        border: 2px solid green;
+        border-radius: 4px;
+        color: white;
+        display: block;
+        font-family: "poppins", sans-serif;
+        padding: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+        text-transform: uppercase;
+        font-size: 1em;
+    }
+    
+    #form .ToS {
+        margin: 4px auto;
+        width: 80%;
+        text-align: center;
+    }
+    #form .ToS p {
+        font-family: "Poppins", sans-serif;
+        font-size: .8em;
+        align-items: center;    
+        padding-top: 10px;
+    }
+}
+/* For Mobile Devices */
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+    section {
+        padding: 0 auto;
+    }
+    
+    body {
+        background-image: url(/images/bg-intro-mobile.png);
+        background-color: var(--primary-color);
+        padding: 0 auto;
+    }
+    
+    section .banner {
+        margin-top: 5em;
+        padding: 0 50px;
+        align-items: center;
+        min-height: auto;
+        width: 100%;
+    }
+    
+    section .banner  h1 {
+        width: 90%;
+        margin: 10px auto;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600px;
+        font-size: 1.4em;
+        color: white;
+    }
+    
+    section .banner  p {
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        width: 100%;
+        margin: 30px auto;
+        font-size: .78em;
+        line-height: 1.8em;
+        color: white;
+        font-weight: normal;
+    }
+    .right-section {
+        position: relative;
+        right: 5em;
+        top: 5em;
+        width: 85%;
+        align-items: center;
+        justify-content: center;
+        min-height: auto;
+        padding: 5px auto;
+        
+    }   
+    .trial {
+        margin-top: 5px;
+        padding: 10px;
+        margin-bottom:  30px;
+        position: relative;
+        left: 100px;
+        width: 100%;
+        position: relative;
+        background-color: rgb(56, 32, 87);
+        border-radius: 10px;
+        text-align: center;
+        
+    }
+    
+    .trial p {
+        color: white;
+        font-size: .9em;
+        width: 60%;
+        position: relative;
+        left: 50px;
+    }
+    
+    
+    #form {
+        justify-content: center;
+        position: relative;
+        left: 100px;
+        width: 100%;
+        background-color: white;
+        height: auto;
+        border-radius: 15px;
+        padding: 15px;
+        margin-bottom: 50px;
+        
+    }
+    
+    .form-control {
+        margin-bottom: 7px;
+        padding-bottom: 7px;
+        position: relative;
+    }
+    
+    
+    .form-control input {
+        font-family: "Poppins", sans-serif;
+        border: 2px solid black;
+        border-radius: 4px;
+        display: block;
+        font-family: "poppins";
+        font-size: 14px;
+        padding: 10px;
+        width: 100%;
+    }
+    
+    .form-control.success input {
+        border-color: green;
+    }
+    .form-control.error input {
+        border-color: red;
+    }
+    
+    .form-control.success i.fas.fa-check-circle {
+        visibility: visible;
+        color: green;
+    }
+    
+    .form-control.error i.fas.fa-exclamation-circle {
+        visibility: visible;
+        color: red;
+    }
+    
+    .form-control.error small {
+        visibility: visible;
+        color: red;
+        font-style: italic;
+        position: relative;
+        left: 10px;
+        top: 5px;
+        font-size: 10px;
+    }
+    
+    .form-control i {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        visibility: hidden;
+    }
+    
+    .form-control small {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        visibility: hidden;
+    }
+    
+    #form button {
+        margin: 0 auto;
+        background-color: green;
+        border: 2px solid green;
+        border-radius: 4px;
+        color: white;
+        display: block;
+        font-family: "poppins", sans-serif;
+        padding: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+        text-transform: uppercase;
+        font-size: .8em;
+    }
+
+    #form .ToS {
+        margin: 4px auto;
+        width: 80%;
+        text-align: center;
+    }
+    #form .ToS p {
+        font-family: "Poppins", sans-serif;
+        font-size: .6em;
+        align-items: center;    
+        padding-top: 10px;
+    }
+}
+
+
